@@ -1,0 +1,63 @@
+{
+    "retcode": 200,
+    "data": [
+             {
+             "moduleHeaderTitle": "慢病服务",
+             "moduleItems": [
+                             {
+                             "moduleImage": "reservation",
+                             "moduleName": "预约管理"
+                             },
+                             {
+                             "moduleImage": "recognizeAndEvaluation",
+                             "moduleName": "识别与评估"
+                             },
+                             {
+                             "moduleImage": "treatmentPlan",
+                             "moduleName": "诊疗计划"
+                             },
+                             {
+                             "moduleImage": "scheduleManagement",
+                             "moduleName": "日程管理"
+                             },
+                             {
+                             "moduleImage": "chronicDiseasePropaganda",
+                             "moduleName": "慢病宣教"
+                             },
+                             {
+                             "moduleImage": "myDevice",
+                             "moduleName": "我的设备"
+                             },
+                             {
+                             "moduleImage": "remindManagement",
+                             "moduleName": "提醒管理"
+                             },
+                             {
+                             "moduleImage": "statisticAnalysis",
+                             "moduleName": "统计分析"
+                             },
+                             {
+                             "moduleImage": "memorandum",
+                             "moduleName": "备忘录"
+                             }
+                             ]
+             },
+             {
+             "moduleHeaderTitle": "互动社区",
+             "moduleItems": [
+                             {
+                             "moduleImage": "officialDynamic",
+                             "moduleName": "官方动态"
+                             },
+                             {
+                             "moduleImage": "questionAndAnswer",
+                             "moduleName": "你问我答"
+                             },
+                             {
+                             "moduleImage": "chronicDiseaseBlog",
+                             "moduleName": "慢病博客"
+                             }
+                             ]
+             }
+             ]
+}

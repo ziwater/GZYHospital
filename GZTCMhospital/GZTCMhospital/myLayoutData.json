@@ -1,0 +1,36 @@
+{
+    "data":[
+            {
+            "items":[
+                     {
+                     "title": "个人资料",
+                     "icon": "personalInformation"
+                     },
+                     {
+                     "title": "我的博客",
+                     "icon": "myBlog"
+                     }
+                     ]
+            },
+            {
+            "items":[
+                     {
+                     "title": "我的回答",
+                     "icon": "myConsult"
+                     },
+                     {
+                     "title": "我的文档",
+                     "icon": "myDocuments"
+                     }
+                     ]
+            },
+            {
+            "items":[
+                     {
+                     "title": "设置",
+                     "icon": "setting"
+                     }
+                     ]
+            }
+            ]
+}

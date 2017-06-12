@@ -1,0 +1,429 @@
+//
+//  PrefixHeader.pch
+//  GZTCMhospital
+//
+//  Created by Chris on 15/9/7.
+//  Copyright (c) 2015年 Chris. All rights reserved.
+//
+
+#ifndef GZTCMhospital_PrefixHeader_pch
+#define GZTCMhospital_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//测试网络url
+#define TestUrl @"https://www.baidu.com"
+//服务器IP
+#define API_DOMAIN @"http://cdm.gdhtcm.com:8028"
+
+//获取OperatorID
+#define GetOperatorID [[NSUserDefaults standardUserDefaults] objectForKey:@"OperatorID"]
+//获取StafferID
+#define GetStafferID [[NSUserDefaults standardUserDefaults] objectForKey:@"StafferID"]
+//获取StafferName
+#define GetStafferName [[NSUserDefaults standardUserDefaults] objectForKey:@"StafferName"]
+
+//首页topNews url
+#define HomeTopNewsUrl @""API_DOMAIN"/ServerAPP/GetTopDetailList.aspx"
+
+//获取组织机构baseUrl
+#define OrganizationListBaseUrl @""API_DOMAIN"/ServerAPP/GetOrganizationList.aspx?"
+
+//统计分析baseUrl
+#define StatisticalAnalysisBaseUrl @""API_DOMAIN"/ServerAppWeb/SetChart.aspx?"
+
+//你问我答 - 科室列表url
+#define ForumUrl @""API_DOMAIN"/ServerAPP/GetFormList.aspx?EditionID=909"
+
+//慢病博客 - 某分类下的的子类
+#define BlogChannelBaseUrl @""API_DOMAIN"/ServerAPP/GetClassListChild.aspx"
+
+//备忘录 - 列表baseUrl
+#define MemorandumBaseUrl @""API_DOMAIN"/ServerAPP/GetDetailListGZY.aspx?"
+
+//官方动态 - 官方动态下表单列表url
+#define OfficialDynamicUrl @""API_DOMAIN"/ServerAPP/GetFormListOfficialTrends.aspx"
+//官方动态 - 某表单下资料列表baseUrl
+#define OfficialDynamicUrlItemBaseUrl @""API_DOMAIN"/ServerAPP/GetDetailListOfficialTrends.aspx?"
+
+//获取所有医生列表baseUrl 日程/提醒
+#define ScheduleOrRemindDoctorListBaseUrl @""API_DOMAIN"/ServerAPP/GetDoctorList.aspx?"
+
+//预约管理 - 所有医生列表baseUrl
+#define DoctorListBaseUrl @""API_DOMAIN"/ServerAPP/GetOrderDoctorList.aspx?"
+//预约管理 - 所有病人列表baseUrl
+#define PatientListBaseUrl @""API_DOMAIN"/ServerAPP/GetOrderPatientList.aspx?"
+//预约管理 - 预约状态baseUrl
+#define OrderStatusBaseUrl @""API_DOMAIN"/ServerAPP/GetOrderStatus.aspx?"
+//预约管理 - 某一预约状态的预约结果baseUrl
+#define OrderResultBaseUrl @""API_DOMAIN"/ServerAPP/GetOrderResult.aspx?"
+//预约管理 - 病人预约列表baseUrl
+#define OrderPatientBaseUrl @""API_DOMAIN"/ServerAPP/GetOrderPatient.aspx?"
+//预约管理 - 预约月视图baseUrl
+#define OrderCalendarBaseUrl @""API_DOMAIN"/ServerAPP/GetOrderTodayM.aspx?"
+//预约管理 - 医生预约baseUrl
+#define OrderDoctorBaseUrl @""API_DOMAIN"/ServerAPP/GetOrderDoctor.aspx?"
+
+//诊疗计划 - 计划分类baseUrl
+#define PlanClassificationBaseUrl @""API_DOMAIN"/ServerAPP/GetIllnessPlanType.aspx?"
+//诊疗计划 - 计划模版baseUrl
+#define PlanTemplateBaseUrl @""API_DOMAIN"/ServerAPP/GetIllnessPlanModel.aspx?"
+//诊疗计划 - 任务管理baseUrl
+#define TaskManagementBaseUrl @""API_DOMAIN"/ServerAPP/GetIllnessPlanTask.aspx?"
+//诊疗计划 - 模版任务baseUrl
+#define TemplateTaskBaseUrl @""API_DOMAIN"/ServerAPP/GetIllnessPlanModelTask.aspx?"
+//诊疗计划 - 病人诊疗计划baseUrl
+#define PatientTreatmentPlanBaseUrl @""API_DOMAIN"/ServerAPP/GetIllnessPlanPatient.aspx?"
+
+//日程管理 - 日程管理baseUrl
+#define ScheduleBaseUrl @""API_DOMAIN"/ServerAPP/GetScheduleManage.aspx?"
+//日程管理 - 病人日程月视图baseUrl
+#define ScheduleCalendarBaseUrl @""API_DOMAIN"/ServerAPP/GetScheduleManagePatientM.aspx?"
+//日程管理 - 医生日程baseUrl
+#define DoctorScheduleBaseUrl @""API_DOMAIN"/ServerAPP/GetScheduleManageDoctor.aspx?"
+//日程管理 - 护士日程baseUrl
+#define NurseScheduleBaseUrl @""API_DOMAIN"/ServerAPP/GetScheduleManageNurse.aspx?"
+//日程管理 - 所有护士列表baseUrl
+#define NurseListBaseUrl @""API_DOMAIN"/ServerAPP/GetNurseList.aspx?"
+//日程管理 - 日程处理状态baseUrl
+#define ProcessingStateBaseUrl @""API_DOMAIN"/ServerAPP/GetScheduleManageStatus.aspx?"
+
+//资讯九宫格数据url
+#define InformationListUrl @""API_DOMAIN"/ServerAPP/GetEditionList.aspx"
+//资讯某频道、慢病论坛 url及moreUrl的baseUrl
+#define InformationBaseUrl @""API_DOMAIN"/ServerAPP/GetDetailList.aspx?"
+//资讯、慢病论坛频道切换导航栏baseUrl
+#define InformatonChannelBaseUrl @""API_DOMAIN"/ServerAPP/GetFormList.aspx?"
+//资讯、慢病博客、慢病论坛webView的baseUrl
+#define InformationWebViewBaseUrl @""API_DOMAIN"/ServerAppWeb/Detail.aspx?"
+//登录baseUrl
+#define LoginBaseUrl @""API_DOMAIN"/ServerAPP/SetLoginCheck.aspx?"
+//注册baseUrl
+#define RegisterBaseUrl @""API_DOMAIN"/ServerAPP/SetRegister.aspx?"
+//评论baseUrl
+#define CommentBaseUrl @""API_DOMAIN"/ServerAPP/SetComment.aspx?"
+//慢病博客频道切换导航栏url
+#define ChronicDiseaseBlogUrl @""API_DOMAIN"/ServerAPP/GetClassList.aspx?ClassID=1951"
+//慢病博客 url及moreUrl的baseUrl
+#define BlogBaseUrl @""API_DOMAIN"/ServerAPP/GetClassBlogDetailList.aspx?"
+//搜索 url及moreUrl的baseUrl
+#define SearchBaseUrl @""API_DOMAIN"/ServerAPP/GetSearchDetailList.aspx?"
+//用户头像上传的baseUrl
+#define PortraitUploadBaseUrl @""API_DOMAIN"/ServerAPP/SetPortrait.aspx?"
+//帖子图片上传baseUrl
+#define PostsPicturesUploadBaseUrl @""API_DOMAIN"/ServerAPP/SetPicture.aspx?"
+//论坛发布baseUrl
+#define PostsUploadBaseUrl @""API_DOMAIN"/ServerAPP/SetDetail.aspx?"
+//博客发布baseUrl
+#define BlogUploadBaseUrl @""API_DOMAIN"/ServerAPP/SetBlogDetail.aspx?"
+
+//识别与评估病种列表baseUrl
+#define DiseaseListBaseUrl @""API_DOMAIN"/ServerAPP/GetEditionListGZYTree2List.aspx?"
+//识别与评估-得到某病人要填的量表的表单baseUrl
+#define FormListBaseUrl @""API_DOMAIN"/ServerApp/GetFormListByPersonID.aspx?"
+
+//识别与评估-某病种科室下的病人baseUrl
+#define IdentifyAndEvaluatePatientListBaseUrl @""API_DOMAIN"/ServerApp/GetPersonListByEditionID.aspx?"
+
+//识别与评估量表详情baseUrl
+#define FormDetailBaseUrl @""API_DOMAIN"/ServerApp/GetDetailListByPersonIDAndFormID.aspx?"
+//识别与评估浏览baseUrl
+#define BrowseBaseUrl @""API_DOMAIN"/ServerAppWeb/InfoManage/InfoItemDetail.aspx?"
+//识别与评估修改baseUrl
+#define ModifyBaseUrl @""API_DOMAIN"/ServerAppWeb/InfoManage/InfoItemModify.aspx?"
+//某量表删除baseUrl
+#define DeleteBaseUrl @""API_DOMAIN"/ServerAppWeb/InfoManage/InfoItemDelete.aspx?"
+
+//慢病宣教 - 某科室病种下的课程列表baseUrl
+#define CourseListBaseUrl @""API_DOMAIN"/ServerAPP/GetCourseList.aspx?"
+//慢病宣教 - 某科室病种下的某一课程的明细baseUrl
+#define CourseDetailBaseUrl @""API_DOMAIN"/ServerAppWeb/InfoManage/InfoItemDetail.aspx?"
+//慢病宣教 - 某科室病种下的某一内容的附件列表baseUrl
+#define CourseFileDownloadBaseUrl @""API_DOMAIN"/ServerAPPWeb/GetDakwahDownList.aspx?"
+//慢病宣教 - 某科室病种下的宣教内容列表baseUrl
+#define CourseContentListBaseUrl @""API_DOMAIN"/ServerAPP/GetDakwahContentList.aspx?"
+//慢病宣教 - 某科室病种的课程考勤列表显示baseUrl
+#define CourseAttendanceListBaseUrl @""API_DOMAIN"/ServerAPP/GetDakwahPlanList.aspx?"
+//慢病宣教 - 某科室病种的病人进度进度条显示baseUrl
+#define CourseProgressBaseUrl @""API_DOMAIN"/ServerAPP/GetDakwahPlanItem.aspx?"
+
+//提醒管理 - 病人提醒管理baseUrl
+#define PatientRemindBaseUrl @""API_DOMAIN"/ServerAPP/GetRemindManagePatient.aspx?"
+//提醒管理 - 医生提醒管理baseUrl
+#define DoctorRemindBaseUrl @""API_DOMAIN"/ServerAPP/GetRemindManageDoctor.aspx?"
+//提醒管理 - 护士提醒管理baseUrl
+#define NurseRemindBaseUrl @""API_DOMAIN"/ServerAPP/GetRemindManageNurse.aspx?"
+//提醒管理 - 科室提醒管理baseUrl
+#define DepartmentRemindBaseUrl @""API_DOMAIN"/ServerAPP/GetRemindManage.aspx?"
+//提醒管理 - 所有提醒方式和记录条数baseUrl
+#define RemindWayAndRecordNumberBaseUrl @""API_DOMAIN"/ServerAPP/GetRemindManageStyleCount.aspx?"
+//提醒管理 - 获取其中一种提醒方式的数据源baseUrl
+#define RemindWayDataBaseUrl @""API_DOMAIN"/ServerAPP/GetRemindManageStyleOther.aspx?"
+//提醒管理 - 提醒消息处理baseUrl
+#define RemindHandleBaseUrl @""API_DOMAIN"/ServerAPP/SetRemindHandling.aspx?"
+
+//我的 - 个人信息baseUrl
+#define PersonalInformationBaseUrl @""API_DOMAIN"/ServerAPP/GetStaffer.aspx?"
+//我的 - 我的博客baseUrl
+#define MyBlogBaseUrl @""API_DOMAIN"/ServerAPP/GetPersonBlogDetailList.aspx?"
+
+//我的 - 某个人的留言列表（收件箱）baseUrl
+#define InboxBaseUrl @""API_DOMAIN"/ServerAPP/GetInfoNoteListReceive.aspx?"
+//我的 - 某个人的留言列表（发件箱）baseUrl
+#define OutboxBaseUrl @""API_DOMAIN"/ServerAPP/GetInfoNoteListSend.aspx?"
+//我的 - 某个人的留言明细(H5)baseUrl
+#define MailDetailBaseUrl @""API_DOMAIN"/ServerAppWeb/InfoNoteDetail.aspx?"
+//我的 - 写留言/回复留言baseUrl
+#define WriteOrReplyMailBaseUrl @""API_DOMAIN"/ServerAPP/SetInfoNote.aspx?"
+//我的 - 删除留言baseUrl
+#define DeleteMailBaseUrl @""API_DOMAIN"/ServerAPP/SetInfoNoteDelete.aspx?"
+
+//我的手URL
+#define MyHandUrl @""API_DOMAIN"/ServerAPP/Image/Myself/MyHand.png"
+//我的舌头URL
+#define MyTongueUrl @""API_DOMAIN"/ServerAPP/Image/Myself/MyTongue.png"
+
+//科室选择
+#define DepartmentSelect @"科室选择"
+//网络数据加载中
+#define NetworkDataLoadingTip @"加载中..."
+
+//我的 - 个人信息提示
+#define DutyNameTip @"职务"
+#define StafferIDTip @"登录账号"
+#define CityTip @"所在城市"
+#define OrganizationNameTip @"科室"
+#define StafferNameTip @"名字"
+#define GenderTip @"性别"
+#define StafferIDCardTip @"身份证号"
+#define MailTip @"邮箱"
+
+#define MaleDefine @"男"
+#define FemaleDefine @"女"
+
+//我的 - 帮助反馈提示
+#define FeedbackTip @"请输入反馈，我们将为您不断改进"
+//我的 - 我的博客
+#define SomebodyBlog @"的博客"
+//我的 - 收件箱
+#define InboxTip @"收件箱"
+//我的 - 发件箱
+#define OutboxTip @"发件箱"
+
+//我的预约
+#define MyOrder @"我的预约"
+#define SomebodyOrderResultTip @"的预约"
+
+//识别与评估
+#define IdentifyAndEvaluate @"识别与评估"
+//识别与评估 - 病人列表总人数
+#define IdentifyAndEvaluatePatientTotalNumber @"总人数:"
+
+//月历视图 - 无事件
+#define NoEventTip @"无事件"
+//月历视图- 全天事件
+#define AllDayEventTip @"全天"
+
+//诊疗计划
+#define TreatmentPlan @"诊疗计划"
+//诊疗计划-计划分类
+#define PlanClassification @"计划分类"
+//诊疗计划-计划模版
+#define PlanTemplate @"计划模板"
+//诊疗计划-任务管理
+#define TaskManagement @"任务管理"
+//诊疗计划-模版任务
+#define TemplateTask @"模版任务"
+//诊疗计划-病人诊疗计划
+#define PatientTreatmentPlan @"个人诊疗计划"
+
+//提醒管理
+#define RemindManagement @"提醒管理"
+//提醒管理 - 某人的提醒
+#define SomebodyRemindTip @"的提醒"
+//提醒管理 - 科室提醒
+#define DepartmentRemindTip @"科室提醒"
+
+//日程管理
+#define ScheduleTip @"的日程"
+#define ScheduleDepartmentTip @"科室日程"
+#define UnHandled @"未处理"
+#define Handled @"已处理"
+#define Known @"知道了"
+
+//慢病宣教
+#define SlowDiseaseCourse @"慢病宣教"
+//慢病宣教 - 课程列表
+#define CourseList @"课程列表"
+//慢病宣教 - 课程内容
+#define CourseContent @"课程内容"
+//慢病宣教 - 考勤列表
+#define AttendanceList @"考勤列表"
+//慢病宣教 - 课程进度
+#define CourseProgressList @"课程进度"
+
+//Tips
+//慢病宣教 - 课程名称
+#define CourseNameTip @"课程名称:"
+//慢病宣教 - 内容名称
+#define CourseContentTip @"内容名称:"
+//慢病宣教 - 主讲人
+#define SpeakerTip @"主讲人:"
+//慢病宣教 - 文件类型
+#define CourseFileTypeTip @"文件类型:"
+//慢病宣教 - 患者姓名
+#define PatientNameTip @"患者姓名:"
+//慢病宣教 - 创建时间
+#define CreateTimeTip @"创建时间:"
+//慢病宣教 - 开课时间
+#define CourseStartTimeTip @"开课时间:"
+//慢病宣教 - 宣教课程
+#define PropagandaCourseTip @"宣教课程:"
+//慢病宣教 - 完成日期
+#define CompletedDate @"完成日期:"
+
+
+//慢病宣教－添加至下载队列
+#define AddToDownloadQueue @"已添加至下载队列"
+//慢病宣教－下载错误
+#define DownloadFailure @"下载错误"
+//慢病宣教－下载成功
+#define DownloadSuccess @"下载成功"
+//慢病宣教－下载
+#define DownloadTitle @"下载"
+//慢病宣教－下载中
+#define DownloadingTitle @"下载中..."
+//慢病宣教－已下载
+#define DownloadedTitle @"已下载"
+//慢病宣教 - 完成
+#define CompleteStatus @"完成"
+//慢病宣教 - 暂停
+#define SuspendStatus @"暂停"
+//慢病宣教 - 等待
+#define WaitingStatus @"等待"
+//慢病宣教 - 重复下载提示
+#define RepeatDownloadTip @"已在下载列表中，无需重复下载。"
+//慢病宣教 - 非WiFi下载提示
+#define NotWiFiDownloadTip @"当前为非WiFi模式，且您未开启非WiFi环境下载，是否继续下载？"
+//慢病宣教 - 非WiFi播放提示
+#define NotWiFiPlayTip @"当前为非WiFi模式，且您未开启非WiFi环境播放视频，是否继续在线播放？"
+//慢病宣教 - 放弃下载
+#define AbandonDownloadTip @"放弃"
+//慢病宣教 - 继续下载
+#define ContinueToDownloadTip @"继续下载"
+//慢病宣教 - 继续播放
+#define ContinueToPlayTip @"继续播放"
+//课程进度
+#define CourseProgress @"－课程进度"
+//课程文件列表
+#define FilesList @"文件列表"
+
+//量表删除确认
+#define DeleteComfirmTip @"确定删除吗?此操作无法撤销!"
+//量表删除按钮
+#define DeleteButtonTip @"删除"
+
+//网络错误提示
+#define NetworkError @"网络不给力"
+//数据加载失败提示
+#define DataLoadFailureTip @"数据加载失败，请稍后重试"
+//手机输入框错误提示
+#define PhoneErrorTip @"请输入正确的手机号"
+//密码输入框错误提示
+#define PasswordErrorTip @"8-16位数字/字母/&-@_*"
+//姓名输入框错误提示
+#define NameErrorTip @"姓名不能为空"
+//身份证输入框错误提示
+#define IdCardErrorTip @"请输入正确的身份证"
+//登录中HUD提示
+#define LoginLoadingTip @"登录中..."
+//登录失败HUD提示
+#define LoginFailureTip @"登录失败，请稍后重试。"
+//注册中HUD提示
+#define RegisterLoadingTip @"注册中..."
+//注册失败HUD提示
+#define RegisterFailureTip @"注册失败，请稍后重试。"
+//注册手机号码为空HUD提示
+#define RegisterPhoneIsNullTip @"手机号码不能为空"
+//验证码为空HUD提示
+#define VerificationCodeIsNullTip @"验证码不能为空"
+//验证码错误HUD提示
+#define VerificationCodeErrorTip @"验证码错误"
+//短信验证码已发送至
+#define VerificationCodeAlreadySend @"短信验证码已发送至"
+//重新获取验证码
+#define ReAccessVerificationCode @"重新获取"
+
+//评论PlaceHolder
+#define CommentPlaceHolder @"写点评论吧..."
+//我的页面立即登录提示
+#define LoginImmediately @"立即登录"
+
+//发帖Tip
+#define PostTip @"发帖"
+//发留言Tip
+#define WriteMailTip @"图文咨询"
+//发博客Tip
+#define WriteBlogTip @"发博客"
+
+//帖子的标题PlaceHolder
+#define PostsTitlePlaceHolder @"标题"
+//帖子内容PlaceHolder
+#define PostsContentPlaceHolder @"这一刻的想法or疑问..."
+//正在发布帖子HUD提示
+#define UpLoadingPostsTip @"发布中，请稍后..."
+//帖子发布失败HUD提示
+#define SendPostsFailureTip @"发布失败，请稍候重试。"
+//选择频道
+#define PickerChannelTip @"选择频道:"
+
+//上传头像UIActionSheet Cancel
+#define SheetCancel @"取消"
+//上传头像UIActionSheet TakePhotos
+#define PortraitTakePhotos @"拍照"
+//上传头像UIActionSheet Select From The Album
+#define PortraitSelectFromAlbum @"从相册中选取"
+//正在上传头像HUD提示
+#define UpLoadingPortraitTip @"正在上传头像..."
+//上传头像失败HUD提示
+#define UpLoadPortraitFailureTip @"上传头像失败，请稍候重试。"
+
+//注销UIActionSheet title
+#define LogoutTitle @"确定要退出登录吗?\n退出后不会删除任何历史数据。"
+//注销UIActionSheet destructive
+#define LogoutDestructive @"退出登录"
+
+//二维码错误提示UIAlertView Title
+#define KindlyRemind @"温馨提示"
+//二维码错误提示UIAlertView Message
+#define CameraAlertMessage @"没有摄像头或摄像头不可用。"
+//二维码错误提示UIAlertView Cancel
+#define CameraAlertCancel @"确定"
+
+//开始测量
+#define StartMeasuringTitle @"开始测量"
+//停止测量
+#define StopMeasuringTitle @"停止测量"
+//我的设备 血压测量log
+#define StartMeasuringTip @"开始测量，请确保血压计蓝牙灯处于闪烁中，手机蓝牙处于开启状态。\n"
+#define IsScanningTip @"正在扫描...\n"
+#define MeasuringTip @"测量中，请稍后...\n"
+#define StopMeasuredTip @"已停止测量。\n"
+#define BluetoothIsNotOpenTip @"蓝牙未开启！\n"
+#define BluetoothIsNotAvailableTip @"蓝牙不可用！\n"
+#define WindingIsNotCorrectTip @"袖带缠绕不正确,请将袖带绑紧。\n"
+#define WrappingIsTooLooseTip @"袖带缠绕太松,请将袖带绑紧。\n"
+#define DoNotShakeTheArmTip @"请不要晃动手臂,请将袖带绑紧。\n"
+#define BatteryVoltageIsTooLowTip @"电池电压过低,请更换电池。\n"
+#define LosingTheConnectionWithDeviceTip @"与设备失去连接。\n"
+#define ConnectionHasBeenDisconnectedTip @"设备连接已断开。\n"
+#define DeviceIsConnectedTip @"设备已连接。\n"
+#define ScanTimeoutTip @"扫描超时，未发现可用的设备。\n"
+#define CompleteTip @"测量完成，结果见上方。\n"
+
+//RGB
+#define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define RGBColorWithAlpha(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#endif
